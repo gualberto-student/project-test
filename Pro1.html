@@ -1,25 +1,16 @@
 <html>
 <head>
-<title>html test</title>
+	<title>Welcome to our portal</title>
 </head>
 <body>
-<h1 style="font-size:50px" align="center">WELCOME TO EL GUALBERTO ROUTER</h1>
-    <link rel="stylesheet" type="text/css" href="Sty.css">
-<form>
-Username:<input type="text"name="username">
-Password<input type="password" name="pwd" >
-<input type="submit" value="submit" >
-</form>
-<h2>Create New Account</h2>
-<form>
-Firstname:<input type="text" name="firstname"><br><br>
-Lastname:<input type="text" name="lastname"><br><br>
-Email:<input type="text" name="mail">
-</form>
-<form>
-<input type="radio" name="sex" value="male">Male<br><br>
-<input type="radio" name="sex" value="female">Female<br><br>
-<input type="submit" value="submit" >
-</form>
-
+	<p>Welcome to our portal</p>
+	<p>Enter your username and password and click Login to access the Internet</p>
+	<form method="post" action="$PORTAL_ACTION$">
+		<input name="auth_user" type="text">
+		<input name="auth_pass" type="password">
+		<input name="redirurl" type="hidden" value="$PORTAL_REDIRURL$">
+		<input name="zone" type="hidden" value="$PORTAL_ZONE$">
+		<input name="accept" type="submit" value="Login">
+	</form>
 </body>
+</html>
