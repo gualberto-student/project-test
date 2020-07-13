@@ -1,0 +1,18 @@
+<html>
+<head>
+    <h1 style="font-size:50px" align="center">WELCOME TO EL GUALBERTO ROUTER</h1>
+<title>Login Form Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <body>
+	<p>Welcome to our portal</p>
+	<p>Enter your username and password and click Login to access the Internet</p>
+	<form method="post" action="$PORTAL_ACTION$">
+		<input name="auth_user" type="text">
+		<input name="auth_pass" type="password">
+		<input name="redirurl" type="hidden" value="$PORTAL_REDIRURL$">
+		<input name="zone" type="hidden" value="$PORTAL_ZONE$">
+		<input name="accept" type="submit" value="Login">
+	</form>
+</body>
+</html>
+
